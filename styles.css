@@ -1,4 +1,45 @@
+body {
+    margin: 0;
+    font-family: '', sans-serif;
+    background-color: #F0F0F0;
+}
+
+header {
+  width: 100%;
+  background: url('images/Header-Background.png') no-repeat center center;
+  background-size: cover;
+  padding: 10px 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .logo {
-    width: 50px;
-    height: auto;
+  height: 60px; /* adjust as needed */
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+.nav-links {
+  display: inline-flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #8d732c;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-container {
+  background-color: #fff8e2;
+  border: 1px solid #61D4E4;
 }
