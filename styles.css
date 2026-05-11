@@ -6,9 +6,13 @@ body {
 
 header {
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background: url('images/Header-Background.png') no-repeat center center;
   background-size: cover;
   padding: 10px 0;
+  height: 70px;
 }
 
 .header-container {
@@ -21,8 +25,8 @@ header {
 }
 
 .logo {
-  height: 60px; /* adjust as needed */
-  width: auto;
+  height: auto;
+  width: 50px;
   object-fit: contain;
   display: block;
 }
@@ -31,6 +35,12 @@ header {
   gap: 20px;
   padding: 20px;
   list-style: none;
+  position: relative;
+  margin-right: 20px;
+}
+
+.nav-links li {
+  position: relative;
 }
 
 .nav-link {
@@ -38,9 +48,49 @@ header {
   color: #8d732c;
   font-weight: bold;
   transition: color 0.3s ease;
+  cursor: pointer;
+  text-shadow:
+    -2px -2px 0 #FFF8E7,
+    2px -2px 0 #FFF8E7,
+    -2px 2px 0 #FFF8E7,
+    2px 2px 0 #FFF8E7;
 }
 
-.nav-container {
-  background-color: #fff8e2;
-  border: 1px solid #61D4E4;
+.nav-link:hover {
+  color: #bfa14c;
+}
+
+.subnav-links {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FFF8E7;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 200px;
+}
+
+.subnav-link {
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #8d732c;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-shadow:
+    -2px -2px 0 #FFF8E7,
+    2px -2px 0 #FFF8E7,
+    -2px 2px 0 #FFF8E7,
+    2px 2px 0 #FFF8E7;
+}
+
+.nav-links li:hover .subnav-links,
+.nav-links li:focus-within .subnav-links {
+  display: block;
+}
+
+.subnav-link:hover {
+  color: #bfa14c;
 }
