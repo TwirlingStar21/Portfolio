@@ -38,7 +38,7 @@ header {
   margin-right: 20px;
 }
 
-.nav-links li {
+.nav-links .nav-item {
   position: relative;
 }
 
@@ -85,8 +85,8 @@ header {
     2px 2px 0 #FFF8E7;
 }
 
-.nav-links li:hover .subnav-links,
-.nav-links li:focus-within .subnav-links {
+.nav-links .nav-item:hover .subnav-links,
+.nav-links .nav-item:focus-within .subnav-links {
   display: block;
 }
 
