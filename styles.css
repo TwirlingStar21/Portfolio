@@ -30,6 +30,7 @@ header {
   display: inline-flex;
   gap: 20px;
   padding: 20px;
+  list-style: none;
 }
 
 .nav-link {
