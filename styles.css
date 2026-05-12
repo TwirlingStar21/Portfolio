@@ -91,10 +91,85 @@ header {
 }
 
 footer {
-  background-image: url('images/footer-background.png') no-repeat center center;
+  background: url('images/footer-background.png') no-repeat center center;
   background-size: cover;
-  padding: 20px;
-  text-align: center;
   width: 100%;
-  height: 150px;
+  height: 350px;
+  margin-bottom: 0;
+}
+
+.footer-border {
+  background: linear-gradient(
+    to bottom,
+    #e8d4a3,
+    #c7a86d,
+    #b8944e
+  );
+  height: 5px;
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+
+.footer-container {
+  margin: 0 auto;
+  color: #5a4303;
+}
+
+.footer-left {
+  position: absolute;
+  left: 10px;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 270px;
+}
+
+.footer-middle {
+  position: absolute;
+  left: 72%;
+  top: 150px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer-right {
+  position: absolute;
+  right: 100px;
+  top: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contact-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: #5f4809;
+  font-weight: bold;
+}
+
+.contact-link:hover {
+  color: #bfa14c;
+  transition: color 0.3s ease;
+}
+
+#back-to-top-link { 
+  text-decoration: none;
+  color: #5f4809;
+  font-weight: bold;
 }
