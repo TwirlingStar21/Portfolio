@@ -89,3 +89,12 @@ header {
 .subnav-link:hover {
   color: #bfa14c;
 }
+
+footer {
+  background-image: url('images/footer-background.png') no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  height: 150px;
+}
