@@ -46,6 +46,19 @@
             </div>
         </header>
         <main id="top">
+            <h1 class="main-title">Checkout</h1>
+            <p class="main-description">Complete your purchase and proceed to checkout.</p>
+            <section class="checkout-section">
+                <h2 class="checkout-section-title">Order Summary</h2>
+                <div id="order-summary" class="order-summary">
+                    <!-- Order summary will be dynamically generated here -->
+                </div>
+                <hr class="project-divider">
+                <p class="total-label">Total:</p>
+                <div class="checkout-total" id="checkout-total"></div>
+                <div id="paypal-button-container"></div>
+                <p id="result-message"></p>
+            </section>
             <div id="royal-crest"></div>
         </main>
         <div class="footer-border"></div>
@@ -67,5 +80,22 @@
                 </div>
             </div>
         </footer>
+        <script
+            src="https://www.paypal.com/sdk/js?client-id=ASN_Pv5TewFara8CxDyBMARGB7mdXtY1RNhJNGDE2h4UqG2DH0TtSdG8pL4RX-2tS7s2npaR0_prWMOa&buyer-country=US&currency=USD&components=buttons&enable-funding=venmo,paylater,card"
+            data-sdk-integration-source="developer-studio"
+        ></script>
+        <script src="cart.js"></script>
+        <script src="checkout.js"></script>
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init({
+                    publicKey: "Kn5RylPW1rH0QHJuS",
+                });
+            })();
+        </script>
+
     </body>
 </html>
