@@ -40,8 +40,7 @@ paypal.Buttons({
     return actions.order.capture().then(function(details) {
       alert("Payment completed! Thank you, " + details.payer.name.given_name);
 
-      localStorage.removeItem("cart");
-      window.location.href = "thankyou.html";
+      const productName = cart.map(item => item.name).join(", ");
 
       emailjs.send("service_pnlkfq5", "template_8kpovh2", {
         customer_name: details.payer.name.given_name,
@@ -65,6 +64,10 @@ paypal.Buttons({
       }, function(error) {
         console.error("Failed to send email.", error);
       });
+
+      
+      localStorage.removeItem("cart");
+      window.location.href = "thankyou.html";
 
     });
   }
