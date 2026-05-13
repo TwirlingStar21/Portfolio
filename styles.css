@@ -13,6 +13,7 @@ header {
   background-size: cover;
   padding: 10px 0;
   height: 70px;
+  border-bottom: 3px solid #bfa14c;
 }
 
 .header-container {
