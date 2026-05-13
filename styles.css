@@ -177,7 +177,7 @@ footer {
   font-weight: bold;
 }
 
-.contact-link:hover {
+.contact-link:hover, .contact-link:focus {
   color: #bfa14c;
   transition: color 0.3s ease;
 }
@@ -186,6 +186,11 @@ footer {
   text-decoration: none;
   color: #5f4809;
   font-weight: bold;
+}
+
+#back-to-top-link:hover, #back-to-top-link:focus {
+  color: #bfa14c;
+  transition: color 0.3s ease;
 }
 
 #top {
