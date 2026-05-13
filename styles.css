@@ -247,6 +247,17 @@ footer {
   border-radius: 10px;
 }
 
+.store-link {
+  display: inline-block;
+  padding: 12px 18px;
+  background-color: #bfa14c;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 /* Mobile navigation adjustments */
 @media (max-width: 768px) {
   header {
