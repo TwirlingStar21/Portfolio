@@ -213,6 +213,21 @@ footer {
   margin-bottom: 30px;
 }
 
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #7C6527;
+}
+.section-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #4e401a;
+}
+
+.hero-content {
+  text-align: center;
+}
+
 #royal-crest {
   width: 120px;
   height: 200px;
