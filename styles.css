@@ -183,8 +183,13 @@ footer {
   min-height: 60vh;
 }
 
-h1 {
+.title {
   font-size: 3rem;
   margin-bottom: 20px;
   color: #7C6527
+}
+
+.content {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
