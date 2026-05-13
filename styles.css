@@ -42,6 +42,7 @@ header {
   position: relative;
 }
 
+/* Desktop navigation */
 .nav-links {
   display: inline-flex;
   gap: 5px;
@@ -242,4 +243,188 @@ footer {
   box-shadow: inset 0 0 10px rgba(255,255,255,0.7), 0 4px 10px rgba(0,0,0,0.15);
   pointer-events: none;
   border-radius: 10px;
+}
+
+/* Mobile navigation adjustments */
+@media (max-width: 768px) {
+  header {
+    padding: 12px 0;
+    height: auto;
+    background-position: top center;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 16px;
+  }
+
+  .branding {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 44px;
+  }
+
+  .logo-title {
+    font-size: 1.25rem;
+    margin-left: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    gap: 8px;
+    margin-right: 0;
+    overflow-x: auto;
+    scrollbar-width: thin;
+  }
+
+  .nav-item {
+    width: auto;
+    position: relative;
+  }
+
+  .nav-link {
+    display: inline-flex;
+    width: auto;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 1rem;
+  }
+
+  .subnav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFF8E7;
+    list-style: none;
+    padding: 0;
+    margin: 4px 0 0;
+    min-width: 180px;
+    z-index: 999;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  .subnav-link {
+    display: block;
+    padding: 10px 14px;
+    color: #7C6527;
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+  .nav-links .nav-item:hover .subnav-links,
+  .nav-links .nav-item:focus-within .subnav-links {
+    display: block;
+  }
+
+  .footer {
+    min-height: auto;
+    height: auto;
+    padding: 32px 16px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 0 16px;
+  }
+
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    width: 100%;
+    left: 0;
+    transform: none;
+    align-items: flex-start;
+  }
+
+  .contact-links {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  #top {
+    padding: 28px 16px;
+    min-height: auto;
+    background-position: top center;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 18px;
+  }
+
+  .content,
+  .section-content {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+    margin-bottom: 16px;
+  }
+
+  .hero-content {
+    text-align: left;
+  }
+
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .project-card {
+    width: 100%;
+    margin: 0;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+  }
+
+  .project-title {
+    font-size: 1.15rem;
+    margin-top: 12px;
+  }
+
+  .project-summary {
+    font-size: 0.98rem;
+    line-height: 1.5;
+  }
+
+  .store-link,
+  .contact-link {
+    display: inline-block;
+    padding: 12px 18px;
+    margin-top: 12px;
+  }
+
+  #royal-crest {
+    width: 100px;
+    height: 170px;
+    margin: 32px auto 0;
+  }
+
+  .back-to-top {
+    width: 100%;
+    text-align: left;
+  }
 }
