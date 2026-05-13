@@ -615,3 +615,9 @@ footer {
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
   border: 1px solid #bfa14c;
 }
+
+.project-image {
+  width: 500px;
+  height: auto;
+  border-radius: 14px;
+}
