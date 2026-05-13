@@ -24,11 +24,15 @@ header {
   justify-content: space-between;
 }
 
+.branding {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   height: auto;
   width: 50px;
   object-fit: contain;
-  display: inline-block;
 }
 
 .logo-title {
@@ -37,7 +41,6 @@ header {
   font-weight: bold;
   margin-left: 10px;
   position: relative;
-  display: inline-block;
 }
 
 .nav-links {
