@@ -1,11 +1,10 @@
 body {
     margin: 0;
     font-family: 'Libre Baskerville', serif;
-    background-color: #F0F0F0;
 }
 
 header {
-  width: 100%;
+  width: 100vw;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -107,7 +106,7 @@ header {
 footer {
   background: url('images/footer-background.png') no-repeat center center;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 450px;
   padding: 20px;
   margin-bottom: 0;
