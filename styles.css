@@ -407,14 +407,19 @@ footer {
     gap: 18px;
   }
 
-  .project-card {
-    width: 450px;
-    margin: 0;
+  .projects-container .project-card, .finished-projects .project-card, .work-in-progress-projects .project-card {
+    max-width: 450px;
+    width: 90%;
+    margin: 0 auto;
     background-color: rgba(255, 248, 231, 0.8);
     border-radius: 14px;
     padding: 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .project-title {
@@ -422,16 +427,25 @@ footer {
     margin-top: 12px;
   }
 
-  .project-image {
-    width: 400px;
+  .project-card .project-image {
+    max-width: 400px;
+    width: 95%;
     height: auto;
     border-radius: 14px;
-    margin-top: 15px;
+    margin: 15px;
   }
 
   .project-summary {
     font-size: 0.98rem;
     line-height: 1.5;
+  }
+
+  .project-card .project-divider {
+    margin: 16px 0;
+    border: none;
+    border-top: 2px solid #bfa14c;
+    max-width: 400px;
+    width: 95%;
   }
 
   .store-link,
