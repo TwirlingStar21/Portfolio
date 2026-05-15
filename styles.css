@@ -258,6 +258,13 @@ footer {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.store-link:hover, .store-link:focus {
+  background-color: #FFF8E7;
+  color: #4e401a;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  border: 1px solid #bfa14c;
+}
+
 /* Mobile navigation adjustments */
 @media (max-width: 768px) {
   header {
