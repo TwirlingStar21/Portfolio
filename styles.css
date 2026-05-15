@@ -422,6 +422,13 @@ footer {
     margin-top: 12px;
   }
 
+  .project-image {
+    width: 500px;
+    height: auto;
+    border-radius: 14px;
+    margin-top: 15px;
+  }
+
   .project-summary {
     font-size: 0.98rem;
     line-height: 1.5;
