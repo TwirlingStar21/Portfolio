@@ -183,6 +183,11 @@ footer {
   transition: color 0.3s ease;
 }
 
+.contact-link:active {
+  color: #d4a82b;
+  transition: color 0.3s ease;
+}
+
 #back-to-top-link { 
   text-decoration: none;
   color: #5f4809;
@@ -263,6 +268,14 @@ footer {
   color: #4e401a;
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
   border: 1px solid #bfa14c;
+}
+
+.store-link:active {
+  background-color: #d4a82b;
+  color: #fff;
+  box-shadow: inset 0 0 0 2px #fff;
+  border: 1px solid #bfa14c;
+  transform: translateY(2px);
 }
 
 /* Mobile navigation adjustments */
@@ -580,6 +593,14 @@ footer {
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
+.template-card-link:active {
+  background-color: #d4a82b;
+  color: #fff;
+  box-shadow: inset 0 0 0 2px #fff;
+  border: 1px solid #bfa14c;
+  transform: translateY(2px);
+}
+
 .main-title {
   font-size: 3rem;
   margin-bottom: 20px;
@@ -646,6 +667,14 @@ footer {
   border: 1px solid #bfa14c;
 }
 
+.price-card .add-to-cart:active {
+  background-color: #d4a82b;
+  color: #fff;
+  box-shadow: inset 0 0 0 2px #fff;
+  border: 1px solid #bfa14c;
+  transform: translateY(2px);
+}
+
 .remove-item {
   display: inline-block;
   margin-top: 10px;
@@ -667,6 +696,14 @@ footer {
   border: 1px solid #daa412;
 }
 
+.remove-item:active {
+  background-color: #d4a82b;
+  color: #fff;
+  box-shadow: inset 0 0 0 2px #fff;
+  border: 1px solid #daa412;
+  transform: translateY(2px);
+}
+
 .checkout-button {
   display: inline-block;
   margin-top: 20px;
@@ -685,6 +722,14 @@ footer {
   color: #4e401a;
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
   border: 1px solid #bfa14c;
+}
+
+.checkout-button:active {
+  background-color: #d4a82b;
+  color: #fff;
+  box-shadow: inset 0 0 0 2px #fff;
+  border: 1px solid #bfa14c;
+  transform: translateY(2px);
 }
 
 .checkout-link {
@@ -709,4 +754,12 @@ footer {
   color: #4e401a;
   box-shadow: 0 10px 20px rgba(0,0,0,0.15);
   border: 1px solid #bfa14c;
+}
+
+.cta-button:active {
+  background-color: #d4a82b;
+  color: #fff;
+  box-shadow: inset 0 0 0 2px #fff;
+  border: 1px solid #bfa14c;
+  transform: translateY(2px);
 }
