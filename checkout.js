@@ -50,7 +50,7 @@ paypal.Buttons({
       }).then(function(response) {
         console.log("Email sent successfully!", response.status, response.text);
       }, function(error) {
-        console.error("Failed to send email.", error);
+        console.error("Failed to send email to customer.", error);
       });
 
       emailjs.send("service_pnlkfq5", "template_29u58cl", {
@@ -62,7 +62,7 @@ paypal.Buttons({
       }).then(function(response) {
         console.log("Email sent successfully!", response.status, response.text);
       }, function(error) {
-        console.error("Failed to send email.", error);
+        console.error("Failed to send email to seller.", error);
       });
 
       
