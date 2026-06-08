@@ -31,7 +31,7 @@ header {
 
 .logo {
   height: auto;
-  width: 50px;
+  width: 70px;
   object-fit: contain;
 }
 
@@ -301,7 +301,7 @@ footer {
   }
 
   .logo {
-    width: 44px;
+    width: 60px;
   }
 
   .logo-title {
