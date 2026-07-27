@@ -1,4 +1,6 @@
 :root {
+  --color-background: #fdfaf2;
+  --color-text: #4e401a;
   --color-primary: #7C6527;
   --color-accent: #bfa14c;
   --color-accent-strong: #d4a82b;
@@ -23,6 +25,34 @@
   --font-body: 'Libre Baskerville', serif;
 }
 
+:root[data-theme="dark"] {
+  --color-background-dark: #0b1220;
+  --color-surface-dark: #131d33;
+  --color-text-dark: #e8ecf7;
+  --color-text-muted-dark: #b7c0d8;
+  --color-accent-dark: #4fb3ff;
+  --color-accent-strong-dark: #7cd3ff;
+  --color-gold-dark: #d4a82b;
+  --color-border-dark: #2a3a55;
+  --shadow-card-dark: 0 4px 14px rgba(0, 0, 0, 0.6);
+  --shadow-glow-dark: 0 0 12px rgba(79, 179, 255, 0.4);
+  --color-background: var(--color-background-dark);
+  --color-surface: var(--color-surface-dark);
+  --color-text: var(--color-text-dark);
+  --color-primary: var(--color-gold-dark);
+  --color-accent: var(--color-accent-dark);
+  --color-accent-strong: var(--color-accent-strong-dark);
+  --color-cream: var(--color-surface-dark);
+  --color-ink: var(--color-text-dark);
+  --color-footer-text: var(--color-text-muted-dark);
+  --color-link-text: var(--color-text-dark);
+  --color-secondary-accent: var(--color-accent-dark);
+  --color-border: var(--color-border-dark);
+  --color-white: var(--color-text-dark);
+  --shadow-card: var(--shadow-card-dark);
+  --shadow-hover: var(--shadow-glow-dark);
+}
+
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -34,6 +64,9 @@
 body {
   margin: 0;
   font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
@@ -236,7 +269,10 @@ footer {
   color: var(--color-ink); /* gold ink */
   width: 100%;
   min-height: 100vh; /* fills the whole screen */
-  background: url('images/portfolio-main-background.png') no-repeat center center;
+  background-color: var(--color-background);
+  background-image: url('images/portfolio-main-background.png');
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover; /* fills the area, even if cropped */
   padding-top: 120px; /* pushes content below sticky header */
   padding-bottom: 60px; /* ensures no gap at the bottom */
@@ -800,4 +836,129 @@ footer {
   box-shadow: inset 0 0 0 2px var(--color-white);
   border: 1px solid var(--color-accent);
   transform: translateY(2px);
+}
+
+/* Dark theme overrides */
+:root[data-theme="dark"] {
+  --color-background-dark: #0b1220;
+  --color-surface-dark: #131d33;
+  --color-text-dark: #e8ecf7;
+  --color-text-muted-dark: #b7c0d8;
+  --color-accent-dark: #4fb3ff;
+  --color-accent-strong-dark: #7cd3ff;
+  --color-gold-dark: #d4a82b;
+  --color-border-dark: #2a3a55;
+  --shadow-card-dark: 0 4px 14px rgba(0, 0, 0, 0.6);
+  --shadow-glow-dark: 0 0 12px rgba(79, 179, 255, 0.4);
+}
+
+body[data-theme="dark"] {
+  background-color: var(--color-background-dark);
+  color: var(--color-text-dark);
+}
+
+body[data-theme="dark"] header {
+  background-image: linear-gradient(rgba(7, 13, 24, 0.75), rgba(7, 13, 24, 0.75));
+  border-bottom-color: var(--color-border-dark);
+}
+
+body[data-theme="dark"] .nav-link,
+body[data-theme="dark"] .subnav-link,
+body[data-theme="dark"] .contact-link,
+body[data-theme="dark"] #back-to-top-link {
+  color: var(--color-text-dark);
+}
+
+body[data-theme="dark"] .nav-link,
+body[data-theme="dark"] .subnav-links {
+  background-color: var(--color-surface-dark);
+}
+
+body[data-theme="dark"] .nav-link:hover,
+body[data-theme="dark"] .subnav-link:hover,
+body[data-theme="dark"] .contact-link:hover,
+body[data-theme="dark"] .contact-link:focus,
+body[data-theme="dark"] #back-to-top-link:hover,
+body[data-theme="dark"] #back-to-top-link:focus {
+  color: var(--color-accent-dark);
+}
+
+body[data-theme="dark"] footer {
+  background-image: linear-gradient(rgba(7, 13, 24, 0.75), rgba(7, 13, 24, 0.75));
+}
+
+body[data-theme="dark"] .footer-container {
+  color: var(--color-text-muted-dark);
+}
+
+body[data-theme="dark"] .footer-border {
+  background: linear-gradient(to bottom, #2f4668, #1d2c45, #11192b);
+}
+
+body[data-theme="dark"] #top {
+  background-image: linear-gradient(rgba(7, 13, 24, 0.78), rgba(7, 13, 24, 0.78));
+  color: var(--color-text-dark);
+}
+
+body[data-theme="dark"] .project-card,
+body[data-theme="dark"] .template-card,
+body[data-theme="dark"] .price-card {
+  background-color: rgba(19, 29, 51, 0.92);
+  box-shadow: var(--shadow-card-dark);
+  color: var(--color-text-dark);
+}
+
+body[data-theme="dark"] .project-title,
+body[data-theme="dark"] .template-card-title,
+body[data-theme="dark"] .main-title,
+body[data-theme="dark"] .section-title,
+body[data-theme="dark"] .title {
+  color: var(--color-gold-dark);
+}
+
+body[data-theme="dark"] .project-summary,
+body[data-theme="dark"] .section-content,
+body[data-theme="dark"] .template-card-description,
+body[data-theme="dark"] .main-description,
+body[data-theme="dark"] .template-features,
+body[data-theme="dark"] .price-card .features {
+  color: var(--color-text-muted-dark);
+}
+
+body[data-theme="dark"] .project-divider {
+  border-top-color: var(--color-border-dark);
+}
+
+body[data-theme="dark"] .store-link,
+body[data-theme="dark"] .template-card-link,
+body[data-theme="dark"] .price-card .add-to-cart,
+body[data-theme="dark"] .checkout-button,
+body[data-theme="dark"] .cta-button {
+  background-color: var(--color-accent-dark);
+  color: var(--color-background-dark);
+  box-shadow: var(--shadow-glow-dark);
+}
+
+body[data-theme="dark"] .store-link:hover,
+body[data-theme="dark"] .store-link:focus,
+body[data-theme="dark"] .template-card-link:hover,
+body[data-theme="dark"] .template-card-link:focus,
+body[data-theme="dark"] .price-card .add-to-cart:hover,
+body[data-theme="dark"] .price-card .add-to-cart:focus,
+body[data-theme="dark"] .checkout-button:hover,
+body[data-theme="dark"] .checkout-button:focus,
+body[data-theme="dark"] .cta-button:hover,
+body[data-theme="dark"] .cta-button:focus {
+  background-color: var(--color-accent-strong-dark);
+  color: var(--color-background-dark);
+}
+
+body[data-theme="dark"] .remove-item {
+  background-color: var(--color-gold-dark);
+  color: var(--color-background-dark);
+}
+
+body[data-theme="dark"] .back-to-top {
+  background-color: var(--color-surface-dark);
+  color: var(--color-text-dark);
 }
