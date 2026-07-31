@@ -90,7 +90,7 @@ header {
   justify-content: space-between;
 }
 
-.branding {
+.logo-container {
   display: flex;
   align-items: center;
 }
@@ -101,7 +101,15 @@ header {
   object-fit: contain;
 }
 
-.logo-title {
+.masthead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: var(--space-sm);
+  text-align: center;
+}
+
+.company-title, .motto {
   font-size: 1.5rem;
   color: var(--color-primary);
   font-weight: bold;
@@ -363,7 +371,7 @@ footer {
     padding: 0 16px;
   }
 
-  .branding {
+  .logo-container {
     width: 100%;
     justify-content: flex-start;
     gap: 10px;
@@ -373,7 +381,13 @@ footer {
     width: 60px;
   }
 
-  .logo-title {
+  .masthead {
+    margin-left: var(--space-sm);
+    gap: var(--space-xs);
+    text-align: center;
+  }
+
+  .company-title, .motto {
     font-size: 1.25rem;
     margin-left: 10px;
   }
