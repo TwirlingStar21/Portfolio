@@ -105,7 +105,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--accent);
   margin-left: var(--space-sm);
   text-align: center;
 }
@@ -116,6 +115,13 @@ header {
   font-weight: bold;
   margin-left: var(--space-xs);
   position: relative;
+}
+
+.motto {
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  font-style: italic;
+  margin-top: var(--space-xs);
 }
 
 /* Desktop navigation */
