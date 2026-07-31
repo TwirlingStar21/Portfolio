@@ -105,6 +105,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: var(--accent);
   margin-left: var(--space-sm);
   text-align: center;
 }
